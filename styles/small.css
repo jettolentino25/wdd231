@@ -1,0 +1,14 @@
+.course-card {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: 1px solid #64748b;
+    border-radius: 0.5rem;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.course-card.completed {
+    border-color: #166534;
+    background-color: #dcfce7;
+    color: #14532d;
+}

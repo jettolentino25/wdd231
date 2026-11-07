@@ -52,3 +52,10 @@ main img {
 body {
     font-family: "Roboto", Arial, sans-serif;
 }
+
+/* Footer social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

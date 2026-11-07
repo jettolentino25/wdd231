@@ -1,18 +1,16 @@
-.course-card {
-    margin: 0.5rem 0;
-    padding: 0.75rem;
-    border: 1px solid #64748b;
-    border-radius: 0.5rem;
-    background-color: #f1f5f9;
-    color: #1e293b;
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
 }
 
-.course-card.completed {
-    border-color: #166534;
-    background-color: #dcfce7;
-    color: #14532d;
+#menu-button {
+    margin-inline-start: auto;
 }
 
+/* Navigation */
 #main-nav.menu-ready:not(.is-open) {
     display: none;
 }
@@ -28,19 +26,25 @@
     text-underline-offset: 0.25em;
 }
 
+/* Student photo */
 main img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
+/* Course cards */
+.course-card {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: 1px solid #64748b;
+    border-radius: 0.5rem;
+    background-color: #f1f5f9;
+    color: #1e293b;
 }
 
-#menu-button {
-    margin-inline-start: auto;
+.course-card.completed {
+    border-color: #166534;
+    background-color: #dcfce7;
+    color: #14532d;
 }

@@ -15,12 +15,12 @@
         gap: 1rem;
     }
 
-    main > h1,
+    main>h1,
     .courses-section {
         grid-column: 1 / -1;
     }
 
-    main > h1,
+    main>h1,
     main section {
         margin-bottom: 0;
     }

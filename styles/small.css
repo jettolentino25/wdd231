@@ -12,6 +12,7 @@
     background-color: #dcfce7;
     color: #14532d;
 }
+
 #main-nav.menu-ready:not(.is-open) {
     display: none;
 }

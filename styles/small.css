@@ -1,41 +1,124 @@
-/* Header */
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header and navigation */
 header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     padding: 1rem;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+header img {
+    flex-shrink: 0;
 }
 
 #menu-button {
+    min-width: 44px;
+    min-height: 44px;
     margin-inline-start: auto;
+    border: 1px solid #64748b;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #1e293b;
+    cursor: pointer;
 }
 
-/* Navigation */
+#main-nav {
+    padding: 0.5rem 1rem;
+    background-color: #1e293b;
+}
+
 #main-nav.menu-ready:not(.is-open) {
     display: none;
 }
 
 #main-nav a {
     display: block;
-    padding: 0.5rem;
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.375rem;
+    color: #fff;
+    text-decoration: none;
 }
 
-#main-nav a[aria-current="page"],
+#main-nav a[aria-current="page"] {
+    background-color: #fff;
+    color: #1e293b;
+    font-weight: 700;
+}
+
 #main-nav a:hover {
     text-decoration: underline;
     text-underline-offset: 0.25em;
 }
 
-/* Student photo */
+/* Main content */
+main {
+    max-width: 70rem;
+    margin-inline: auto;
+    padding: 1.5rem 1rem;
+}
+
+h1 {
+    margin: 0 0 1rem;
+}
+
+main section {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+main h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
 main img {
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 0.375rem;
 }
 
-/* Course cards */
+/* Course filters and cards */
+.course-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-filters button {
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #64748b;
+    border-radius: 0.375rem;
+    background-color: #fff;
+    color: #1e293b;
+    cursor: pointer;
+}
+
+.course-filters button[aria-pressed="true"] {
+    background-color: #1e293b;
+    color: #fff;
+    font-weight: 700;
+}
+
+#course-list {
+    display: grid;
+    gap: 0.5rem;
+}
+
 .course-card {
-    margin: 0.5rem 0;
+    margin: 0;
     padding: 0.75rem;
     border: 1px solid #64748b;
     border-radius: 0.5rem;
@@ -49,13 +132,27 @@ main img {
     color: #14532d;
 }
 
-body {
-    font-family: "Roboto", Arial, sans-serif;
+/* Footer */
+footer {
+    padding: 1rem;
+    border-top: 1px solid #cbd5e1;
+    background-color: #fff;
+    text-align: center;
 }
 
-/* Footer social links */
+footer p {
+    margin: 0.5rem 0 0;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.social-links a {
+    display: grid;
+    min-width: 44px;
+    min-height: 44px;
+    place-items: center;
 }

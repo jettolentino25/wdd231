@@ -7,10 +7,10 @@
     <meta name="description" content="My WDD 231 course home page and web development projects.">
     <meta name="author" content="Aaron J Evan M. Tolentino">
     <title>Home | WDD 231 | Aaron J Evan M. Tolentino</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -24,6 +24,7 @@
     <header>
         <img src="images/logo.svg" alt="" width="48" height="48">
         <span>Aaron J Evan M. Tolentino</span>
+
         <button type="button" id="menu-button" aria-controls="main-nav" aria-expanded="false"
             aria-label="Toggle navigation" hidden>
             ☰
@@ -61,13 +62,15 @@
         <section class="courses-section">
             <h2>Web Certificate Courses</h2>
 
-            <div class="course-filters">
-                <button type="button" data-filter="all">All Courses</button>
-                <button type="button" data-filter="WDD">WDD Courses</button>
-                <button type="button" data-filter="CSE">CSE Courses</button>
+            <div class="course-filters" role="group" aria-label="Filter courses">
+                <button type="button" data-filter="all" aria-pressed="true">All Courses</button>
+                <button type="button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+                <button type="button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
             </div>
 
-            <p>Total credits: <span id="total-credits">0</span></p>
+            <p aria-live="polite" aria-atomic="true">
+                Total credits: <span id="total-credits">0</span>
+            </p>
             <div id="course-list"></div>
         </section>
     </main>

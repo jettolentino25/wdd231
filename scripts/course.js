@@ -78,9 +78,12 @@ for (const button of filterButtons) {
             ? courses
             : courses.filter(course => course.subject === subject);
 
+        for (const filterButton of filterButtons) {
+            filterButton.setAttribute('aria-pressed', String(filterButton === button));
+        }
+
         displayCourses(matchingCourses);
     });
 }
 
-// Show all courses when the page loads.
 displayCourses(courses);

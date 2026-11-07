@@ -48,3 +48,7 @@ main img {
     background-color: #dcfce7;
     color: #14532d;
 }
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+}

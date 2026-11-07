@@ -32,3 +32,14 @@ main img {
     max-width: 100%;
     height: auto;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+#menu-button {
+    margin-inline-start: auto;
+}

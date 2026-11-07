@@ -26,3 +26,9 @@
     text-decoration: underline;
     text-underline-offset: 0.25em;
 }
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -9,16 +9,22 @@
     <title>Home | WDD 231 | Aaron J Evan M. Tolentino</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
     <header>
         <span>Aaron J Evan M. Tolentino</span>
+        <button type="button" id="menu-button" aria-controls="main-nav" aria-expanded="false"
+            aria-label="Toggle navigation" hidden>
+            ☰
+        </button>
     </header>
 
-    <nav aria-label="Main navigation">
+    <nav id="main-nav" aria-label="Main navigation">
         <a href="index.html" aria-current="page">Home</a>
         <a href="chamber/">Chamber</a>
         <a href="final/">Final</a>

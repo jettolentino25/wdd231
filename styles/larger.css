@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    #main-nav,
+    #main-nav.menu-ready:not(.is-open) {
+        display: flex;
+        gap: 1rem;
+    }
+}

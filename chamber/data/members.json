@@ -11,6 +11,12 @@
             "category": "Printing Services",
             "location": "Manila, Philippines",
             "description": "Prints recital programs, posters, and event materials for local schools and businesses."
+        },
+        {
+            "name": "Escolta Café",
+            "category": "Café",
+            "location": "Manila, Philippines",
+            "description": "Serves Philippine coffee and pastries and hosts small gatherings for local businesses."
         }
     ]
 }

@@ -54,3 +54,41 @@ main {
     margin-bottom: 0;
     line-height: 1.6;
 }
+
+.hero {
+    padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 2.5rem);
+    border-bottom: 3px solid #c8a86b;
+    background-color: #eaf2f8;
+    color: #16324f;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 52ch;
+    margin: 1rem 0 1.5rem;
+    line-height: 1.6;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    background-color: #176b6b;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.join-button:hover {
+    background-color: #105454;
+}
+
+.join-button:focus-visible {
+    outline: 3px solid #16324f;
+    outline-offset: 3px;
+}

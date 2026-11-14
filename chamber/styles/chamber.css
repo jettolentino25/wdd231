@@ -35,3 +35,22 @@ nav a {
 main {
     padding: 1rem;
 }
+
+.member-spotlight {
+    margin-block: 1.5rem;
+    padding: 1.25rem;
+    border-top: 3px solid #c8a86b;
+    background-color: #eaf2f8;
+}
+
+.member-spotlight h2,
+.member-spotlight h3 {
+    margin-top: 0;
+    color: #16324f;
+}
+
+.member-spotlight p {
+    max-width: 60ch;
+    margin-bottom: 0;
+    line-height: 1.6;
+}

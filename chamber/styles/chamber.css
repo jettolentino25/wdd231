@@ -140,3 +140,11 @@ main {
     margin-top: 0;
     color: #16324f;
 }
+
+.discover-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+}

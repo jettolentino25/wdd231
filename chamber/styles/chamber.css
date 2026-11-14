@@ -104,3 +104,21 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+#member-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+#member-list>section {
+    padding: 1.25rem;
+    border-top: 3px solid #c8a86b;
+    background-color: #eaf2f8;
+    line-height: 1.5;
+}
+
+#member-list h2 {
+    margin-top: 0;
+    color: #16324f;
+}

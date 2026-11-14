@@ -1,5 +1,5 @@
 const weatherStatus = document.querySelector("#weather-status");
-const apiKey = "342ca95463a77555ce448d95a1906bb7";
+const apiKey = "b2afc8d11f6d786159053b10ca84ddd0";
 
 const url = new URL("https://api.openweathermap.org/data/2.5/weather");
 url.search = new URLSearchParams({

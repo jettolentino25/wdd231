@@ -5,6 +5,12 @@
             "category": "Music School",
             "location": "Manila, Philippines",
             "description": "Private lessons in piano, guitar, voice, music theory, flute, ukulele, and violin. Each term includes 12 weekly one-on-one lessons, with a choice of 30 or 60 minutes."
+        },
+        {
+            "name": "Intramuros Print Studio",
+            "category": "Printing Services",
+            "location": "Manila, Philippines",
+            "description": "Prints recital programs, posters, and event materials for local schools and businesses."
         }
     ]
 }

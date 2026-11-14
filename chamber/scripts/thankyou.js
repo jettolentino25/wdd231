@@ -12,5 +12,6 @@ const membershipNames = new Map([
 if (firstName && lastName && membershipNames.has(membership)) {
     const summary = document.querySelector("#application-summary");
     const level = membershipNames.get(membership);
+
     summary.textContent = `Thank you, ${firstName} ${lastName}. You selected ${level} membership for this demo.`;
 }

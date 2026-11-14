@@ -1,13 +1,86 @@
-<main>
-    <h1>Join the Chamber</h1>
-    <p>Connect with Manila businesses and find a membership that fits your organization.</p>
+<!DOCTYPE html>
+<html lang="en">
 
-    <section>
-        <h2>Membership Levels</h2>
-        <ul>
-            <li>Nonprofit</li>
-            <li>Silver</li>
-            <li>Gold</li>
-        </ul>
-    </section>
-</main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Manila Chamber of Commerce membership options and learn how to apply.">
+    <meta name="author" content="Aaron J Evan M. Tolentino">
+    <title>Join | Manila Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+
+<body>
+    <header>
+        <p>Manila Chamber of Commerce</p>
+        <nav aria-label="Chamber navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" aria-current="page">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+        <p>Connect with Manila businesses and find a membership that fits your organization.</p>
+
+        <section>
+            <h2>Membership Levels</h2>
+            <ul>
+                <li>Nonprofit</li>
+                <li>Silver</li>
+                <li>Gold</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Membership Application</h2>
+
+            <form action="thankyou.html" method="get">
+                <p>
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+                </p>
+                <p>
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+                </p>
+                <p>
+                    <label for="organization">Business or organization name</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" required>
+                </p>
+                <p>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="phone">Mobile phone</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </p>
+                <p>
+                    <label for="membership">Membership level</label>
+                    <select id="membership" name="membership" required>
+                        <option value="">Choose a level</option>
+                        <option value="nonprofit">Nonprofit</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="description">Tell us about your organization</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </p>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Manila Chamber of Commerce | WDD 231 Project</p>
+    </footer>
+</body>
+
+</html>

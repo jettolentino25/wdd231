@@ -3,6 +3,11 @@
     "moveInDate": "2026-11-01",
     "numberOfPeople": 3,
     "visitedByBishopric": false,
-    "familyMembers": []
-
+    "familyMembers": [
+        {
+            "name": "",
+            "gender": "",
+            "birthdate": ""
+        }
+    ]
 }

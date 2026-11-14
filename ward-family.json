@@ -5,9 +5,19 @@
     "visitedByBishopric": false,
     "familyMembers": [
         {
-            "name": "",
-            "gender": "",
-            "birthdate": ""
+            "name": "Marco Reyes",
+            "gender": "Male",
+            "birthdate": "1992-04-18"
+        },
+        {
+            "name": "Elena Reyes",
+            "gender": "Female",
+            "birthdate": "1994-08-12"
+        },
+        {
+            "name": "Sofia Reyes",
+            "gender": "Female",
+            "birthdate": "2018-02-06"
         }
     ]
 }

@@ -92,3 +92,15 @@ main {
     outline: 3px solid #16324f;
     outline-offset: 3px;
 }
+
+.home-info {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 700px) {
+    .home-info {
+        grid-template-columns: 1fr 1fr;
+    }
+}

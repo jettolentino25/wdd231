@@ -4,19 +4,78 @@
             "name": "Talented Keys",
             "category": "Music School",
             "location": "Manila, Philippines",
-            "description": "Private lessons in piano, guitar, voice, music theory, flute, ukulele, and violin. Each term includes 12 weekly one-on-one lessons, with a choice of 30 or 60 minutes."
+            "description": "Private lessons in piano, guitar, voice, music theory, flute, ukulele, and violin. Each term includes 12 weekly one-on-one lessons, with a choice of 30 or 60 minutes.",
+            "address": "101 Sample Lane, Malate, Manila",
+            "phone": "+63 2 0000 0101",
+            "website": "https://talented-keys.example",
+            "image": "talented-keys.webp",
+            "membership": "Silver"
         },
         {
             "name": "Intramuros Print Studio",
             "category": "Printing Services",
             "location": "Manila, Philippines",
-            "description": "Prints recital programs, posters, and event materials for local schools and businesses."
+            "description": "Prints recital programs, posters, and event materials for local schools and businesses.",
+            "address": "102 Sample Lane, Intramuros, Manila",
+            "phone": "+63 2 0000 0102",
+            "website": "https://intramuros-print-studio.example",
+            "image": "intramuros-print-studio.webp",
+            "membership": "Silver"
         },
         {
             "name": "Escolta Café",
             "category": "Café",
             "location": "Manila, Philippines",
-            "description": "Serves Philippine coffee and pastries and hosts small gatherings for local businesses."
+            "description": "Serves Philippine coffee and pastries and hosts small gatherings for local businesses.",
+            "address": "103 Sample Lane, Binondo, Manila",
+            "phone": "+63 2 0000 0103",
+            "website": "https://escolta-cafe.example",
+            "image": "escolta-cafe.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Paco Community Arts Center",
+            "category": "Community Arts",
+            "location": "Manila, Philippines",
+            "description": "Offers affordable art workshops and hosts exhibits for neighborhood artists.",
+            "address": "104 Sample Lane, Paco, Manila",
+            "phone": "+63 2 0000 0104",
+            "website": "https://paco-community-arts.example",
+            "image": "paco-community-arts.webp",
+            "membership": "Nonprofit"
+        },
+        {
+            "name": "Sampaloc Bike Works",
+            "category": "Bicycle Repair",
+            "location": "Manila, Philippines",
+            "description": "Repairs commuter bicycles and provides safety checks and basic tune-ups.",
+            "address": "105 Sample Lane, Sampaloc, Manila",
+            "phone": "+63 2 0000 0105",
+            "website": "https://sampaloc-bike-works.example",
+            "image": "sampaloc-bike-works.webp",
+            "membership": "Silver"
+        },
+        {
+            "name": "Ermita Desk Collective",
+            "category": "Coworking Space",
+            "location": "Manila, Philippines",
+            "description": "Provides shared desks and meeting rooms for freelancers and small teams.",
+            "address": "106 Sample Lane, Ermita, Manila",
+            "phone": "+63 2 0000 0106",
+            "website": "https://ermita-desk-collective.example",
+            "image": "ermita-desk-collective.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Tondo Harvest Kitchen",
+            "category": "Catering",
+            "location": "Manila, Philippines",
+            "description": "Prepares Filipino meals and snack trays for office lunches and community events.",
+            "address": "107 Sample Lane, Tondo, Manila",
+            "phone": "+63 2 0000 0107",
+            "website": "https://tondo-harvest-kitchen.example",
+            "image": "tondo-harvest-kitchen.webp",
+            "membership": "Silver"
         }
     ]
 }

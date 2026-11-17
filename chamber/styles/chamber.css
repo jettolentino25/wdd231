@@ -32,6 +32,12 @@ nav a {
     color: inherit;
 }
 
+nav a[aria-current="page"] {
+    font-weight: 700;
+    text-decoration-thickness: 0.15em;
+    text-underline-offset: 0.25em;
+}
+
 main {
     padding: 1rem;
 }
@@ -105,22 +111,65 @@ main {
     }
 }
 
+.directory-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.directory-controls button {
+    padding: 0.6rem 1rem;
+    border: 1px solid #16324f;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: #16324f;
+    font: inherit;
+    cursor: pointer;
+}
+
+.directory-controls button[aria-pressed="true"] {
+    background-color: #16324f;
+    color: white;
+}
+
+.directory-controls button:focus-visible {
+    outline: 3px solid #176b6b;
+    outline-offset: 3px;
+}
+
 #member-list {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 
-#member-list>section {
+#member-list > section {
     padding: 1.25rem;
     border-top: 3px solid #c8a86b;
     background-color: #eaf2f8;
     line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
 #member-list h2 {
     margin-top: 0;
     color: #16324f;
+}
+
+.member-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+#member-list.list-view {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+#member-list.list-view .member-image {
+    display: none;
 }
 
 .discover-grid {
@@ -129,7 +178,7 @@ main {
     gap: 1rem;
 }
 
-.discover-grid>article {
+.discover-grid > article {
     padding: 1.25rem;
     border-top: 3px solid #c8a86b;
     background-color: #eaf2f8;

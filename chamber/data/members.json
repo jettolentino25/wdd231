@@ -1,81 +1,81 @@
 {
-    "members": [
-        {
-            "name": "Talented Keys",
-            "category": "Music School",
-            "location": "Manila, Philippines",
-            "description": "Private lessons in piano, guitar, voice, music theory, flute, ukulele, and violin. Each term includes 12 weekly one-on-one lessons, with a choice of 30 or 60 minutes.",
-            "address": "101 Sample Lane, Malate, Manila",
-            "phone": "+63 2 0000 0101",
-            "website": "https://talented-keys.example",
-            "image": "talented-keys.webp",
-            "membership": "Silver"
-        },
-        {
-            "name": "Intramuros Print Studio",
-            "category": "Printing Services",
-            "location": "Manila, Philippines",
-            "description": "Prints recital programs, posters, and event materials for local schools and businesses.",
-            "address": "102 Sample Lane, Intramuros, Manila",
-            "phone": "+63 2 0000 0102",
-            "website": "https://intramuros-print-studio.example",
-            "image": "intramuros-print-studio.webp",
-            "membership": "Silver"
-        },
-        {
-            "name": "Escolta Café",
-            "category": "Café",
-            "location": "Manila, Philippines",
-            "description": "Serves Philippine coffee and pastries and hosts small gatherings for local businesses.",
-            "address": "103 Sample Lane, Binondo, Manila",
-            "phone": "+63 2 0000 0103",
-            "website": "https://escolta-cafe.example",
-            "image": "escolta-cafe.webp",
-            "membership": "Gold"
-        },
-        {
-            "name": "Paco Community Arts Center",
-            "category": "Community Arts",
-            "location": "Manila, Philippines",
-            "description": "Offers affordable art workshops and hosts exhibits for neighborhood artists.",
-            "address": "104 Sample Lane, Paco, Manila",
-            "phone": "+63 2 0000 0104",
-            "website": "https://paco-community-arts.example",
-            "image": "paco-community-arts.webp",
-            "membership": "Nonprofit"
-        },
-        {
-            "name": "Sampaloc Bike Works",
-            "category": "Bicycle Repair",
-            "location": "Manila, Philippines",
-            "description": "Repairs commuter bicycles and provides safety checks and basic tune-ups.",
-            "address": "105 Sample Lane, Sampaloc, Manila",
-            "phone": "+63 2 0000 0105",
-            "website": "https://sampaloc-bike-works.example",
-            "image": "sampaloc-bike-works.webp",
-            "membership": "Silver"
-        },
-        {
-            "name": "Ermita Desk Collective",
-            "category": "Coworking Space",
-            "location": "Manila, Philippines",
-            "description": "Provides shared desks and meeting rooms for freelancers and small teams.",
-            "address": "106 Sample Lane, Ermita, Manila",
-            "phone": "+63 2 0000 0106",
-            "website": "https://ermita-desk-collective.example",
-            "image": "ermita-desk-collective.webp",
-            "membership": "Gold"
-        },
-        {
-            "name": "Tondo Harvest Kitchen",
-            "category": "Catering",
-            "location": "Manila, Philippines",
-            "description": "Prepares Filipino meals and snack trays for office lunches and community events.",
-            "address": "107 Sample Lane, Tondo, Manila",
-            "phone": "+63 2 0000 0107",
-            "website": "https://tondo-harvest-kitchen.example",
-            "image": "tondo-harvest-kitchen.webp",
-            "membership": "Silver"
-        }
-    ]
+  "members": [
+    {
+      "name": "Escolta Coffee Company",
+      "category": "Coffee Roaster and Café",
+      "location": "Manila, Philippines",
+      "description": "Roasts Philippine specialty coffee in Binondo.",
+      "address": "Unit G3A, Burke Building, Escolta corner Burke Street, Binondo, Manila 1006",
+      "phone": "+63 2 8822 2332",
+      "website": "https://escoltacoffee.co/pages/our-story",
+      "image": "escolta-coffee-company.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Café Ilang-Ilang",
+      "category": "Restaurant",
+      "location": "Manila, Philippines",
+      "description": "Serves international buffet meals at The Manila Hotel.",
+      "address": "The Manila Hotel, One Rizal Park, Ermita, Manila 0913",
+      "phone": "+63 2 8527 0011",
+      "website": "https://www.manila-hotel.com.ph/dining/cafe-ilang-ilang/",
+      "image": "cafe-ilang-ilang.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Café Adriatico – Malate",
+      "category": "Restaurant",
+      "location": "Manila, Philippines",
+      "description": "Serves Filipino and international dishes near Remedios Circle.",
+      "address": "1970 M. Adriatico Street, Remedios Circle, Malate, Manila",
+      "phone": "+63 2 8991 5202",
+      "website": "https://ljcrestaurant.com/restaurants/cafe-adriatico/",
+      "image": "cafe-adriatico.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Barbara’s Heritage Restaurant",
+      "category": "Restaurant",
+      "location": "Manila, Philippines",
+      "description": "Serves meals and hosts cultural performances in Intramuros.",
+      "address": "General Luna Street, Intramuros, Manila",
+      "phone": "+63 983 557 3027",
+      "website": "https://www.barbaras.ph/contact-us",
+      "image": "barbaras-heritage-restaurant.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "The Bayleaf Intramuros",
+      "category": "Hotel",
+      "location": "Manila, Philippines",
+      "description": "A boutique hotel with a rooftop restaurant inside Intramuros.",
+      "address": "Muralla Street corner Victoria Street, Intramuros, Manila 1002",
+      "phone": "+63 2 5318 5000",
+      "website": "https://www.thebayleaf.com.ph/",
+      "image": "the-bayleaf-intramuros.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Robinsons Manila",
+      "category": "Shopping Mall",
+      "location": "Manila, Philippines",
+      "description": "A shopping mall in Ermita with retail stores, restaurants, and services.",
+      "address": "Pedro Gil Street corner Adriatico Street, Ermita, Manila",
+      "phone": "+63 2 5310 3333",
+      "website": "https://robinsonsmalls.com/mall-info/robinsons-place-manila",
+      "image": "robinsons-manila.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Manila Ocean Park",
+      "category": "Visitor Attraction",
+      "location": "Manila, Philippines",
+      "description": "Features an oceanarium and animal exhibits near the Quirino Grandstand.",
+      "address": "Behind the Quirino Grandstand, Luneta, Ermita, Manila",
+      "phone": "+63 2 7238 6120",
+      "website": "https://manilaoceanpark.com/faq/",
+      "image": "manila-ocean-park.webp",
+      "membership": "Gold"
+    }
+  ]
 }

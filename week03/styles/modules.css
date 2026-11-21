@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #eee;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+h2 {
+  color: #444;
+}
+
+#enrollment {
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  background-color: #b9efdf;
+  text-align: center;
+}
+
+select,
+button {
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+}
+
+button {
+  display: block;
+  margin: 0.75rem auto 0;
+  border: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #175ea8;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #124a85;
+}
+
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid #172c43;
+  outline-offset: 3px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 0.75rem 0.4rem;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  color: #fff;
+  background-color: #222;
+}

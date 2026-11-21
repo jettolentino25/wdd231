@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="icon" href="images/chamber-favicon.ico" sizes="32x32">
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
 
 <body>
@@ -23,11 +24,17 @@
         </nav>
     </header>
 
-    <main>
+    <main class="chamber-home">
         <section class="hero">
-            <h1>Manila Chamber of Commerce</h1>
-            <p>Discover local businesses, find upcoming events, and connect with Manila’s business community.</p>
-            <a class="join-button" href="join.html">Join the Chamber</a>
+            <div class="hero-media">
+                <img class="hero-image" src="images/intramuros.webp" width="1600" height="1067"
+                    alt="Manila Cathedral and its bell tower in Intramuros">
+                <a class="join-button" href="join.html">Join the Chamber</a>
+            </div>
+            <div class="hero-content">
+                <h1>Manila Chamber of Commerce</h1>
+                <p>Discover local businesses, find upcoming events, and connect with Manila’s business community.</p>
+            </div>
         </section>
 
         <div class="home-info">
@@ -41,17 +48,21 @@
             </section>
 
             <section>
-                <h2>Local Weather</h2>
-                <p id="weather-status" aria-live="polite">Current conditions for Manila will appear here.</p>
+                <h2>Current Weather</h2>
+                <p id="weather-status" role="status">Loading current conditions in Manila…</p>
+            </section>
+
+            <section>
+                <h2>Three-Day Forecast</h2>
+                <p id="forecast-status" role="status">Loading the Manila forecast…</p>
+                <ul id="forecast-list" hidden></ul>
             </section>
         </div>
 
         <section class="member-spotlight">
-            <h2>Member Spotlight</h2>
-            <h3>Talented Keys</h3>
-            <p>Private music lessons in Manila. Each term includes 12 weekly
-                one-on-one lessons, with a choice of 30 or 60 minutes.</p>
-            <a href="directory.html">View Talented Keys in the directory</a>
+            <h2>Member Spotlights</h2>
+            <p id="spotlight-status" role="status">Loading member spotlights…</p>
+            <div id="spotlight-list" class="spotlight-grid"></div>
         </section>
     </main>
 

@@ -1,0 +1,84 @@
+.chamber-home {
+    max-width: 76rem;
+    margin-inline: auto;
+}
+
+.chamber-home .hero {
+    padding: 0;
+}
+
+.hero-media {
+    position: relative;
+}
+
+.hero-media .join-button {
+    position: absolute;
+    inset-block-end: 1rem;
+    inset-inline-end: 1rem;
+}
+
+.hero-media .join-button:focus-visible {
+    outline: 3px solid white;
+    box-shadow: 0 0 0 7px #16324f;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 28rem;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.home-info > section {
+    padding: 1rem 1.25rem;
+    background-color: #fff;
+    border-top: 3px solid #c8a86b;
+    line-height: 1.5;
+}
+
+.home-info h2 {
+    margin-top: 0;
+    color: #16324f;
+}
+
+.home-info li + li {
+    margin-top: 0.5rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-grid article {
+    min-width: 0;
+    padding: 1rem;
+    background-color: #fff;
+    overflow-wrap: anywhere;
+}
+
+.spotlight-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background-color: #f8f6f0;
+}
+
+.spotlight-membership {
+    color: #16324f;
+    font-weight: bold;
+}
+
+@media (min-width: 56rem) {
+    .home-info,
+    .spotlight-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

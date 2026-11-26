@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="icon" href="images/chamber-favicon.ico" sizes="32x32">
     <script src="scripts/join.js" defer></script>
 </head>
@@ -36,100 +37,102 @@
         <h1>Join the Chamber</h1>
         <p>Connect with Manila businesses and find a membership that fits your organization.</p>
 
+        <div class="join-layout">
+            <section>
+                <h2>Membership Application</h2>
 
+                <form action="thankyou.html" method="get">
+                    <p>
+                        <label for="first-name">
+                            First name
+                            <input type="text" id="first-name" name="firstName" autocomplete="given-name"
+                                title="Enter your first name" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="last-name">
+                            Last name
+                            <input type="text" id="last-name" name="lastName" autocomplete="family-name"
+                                title="Enter your last name" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="organization-title">
+                            Organizational title (optional)
+                            <input type="text" id="organization-title" name="organizationTitle"
+                                autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"
+                                title="Enter at least 7 characters using letters, spaces, or hyphens.">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="organization">
+                            Business or organization name
+                            <input type="text" id="organization" name="organization" autocomplete="organization"
+                                title="Enter your business or organization name" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="email">
+                            Email address
+                            <input type="email" id="email" name="email" autocomplete="email"
+                                title="Enter your email address" placeholder="name@example.com" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="phone">
+                            Mobile phone
+                            <input type="tel" id="phone" name="phone" autocomplete="tel"
+                                title="Enter your mobile phone number" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="membership">
+                            Membership level
+                            <select id="membership" name="membership" title="Choose a membership level" required>
+                                <option value="">Choose a level</option>
+                                <option value="np">NP Membership (no fee)</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="description">
+                            Tell us about your organization
+                            <textarea id="description" name="description" rows="4"
+                                title="Describe your business or organization"></textarea>
+                        </label>
+                    </p>
 
-        <section>
-            <h2>Membership Application</h2>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
 
-            <form action="thankyou.html" method="get">
-                <p>
-                    <label for="first-name">
-                        First name
-                        <input type="text" id="first-name" name="firstName" autocomplete="given-name"
-                            title="Enter your first name" required>
-                    </label>
-                </p>
-                <p>
-                    <label for="last-name">
-                        Last name
-                        <input type="text" id="last-name" name="lastName" autocomplete="family-name"
-                            title="Enter your last name" required>
-                    </label>
-                </p>
-                <p>
-                    <label for="organization-title">
-                        Organizational title (optional)
-                        <input type="text" id="organization-title" name="organizationTitle"
-                            autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"
-                            title="Enter at least 7 characters using letters, spaces, or hyphens.">
-                    </label>
-                </p>
-                <p>
-                    <label for="organization">
-                        Business or organization name
-                        <input type="text" id="organization" name="organization" autocomplete="organization"
-                            title="Enter your business or organization name" required>
-                    </label>
-                </p>
-                <p>
-                    <label for="email">
-                        Email address
-                        <input type="email" id="email" name="email" autocomplete="email"
-                            title="Enter your email address" placeholder="name@example.com" required>
-                    </label>
-                </p>
-                <p>
-                    <label for="phone">
-                        Mobile phone
-                        <input type="tel" id="phone" name="phone" autocomplete="tel"
-                            title="Enter your mobile phone number" required>
-                    </label>
-                </p>
-                <p>
-                    <label for="membership">
-                        Membership level
-                        <select id="membership" name="membership" title="Choose a membership level" required>
-                            <option value="">Choose a level</option>
-                            <option value="np">NP Membership (no fee)</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
-                        </select>
-                    </label>
-                </p>
-                <p>
-                    <label for="description">
-                        Tell us about your organization
-                        <textarea id="description" name="description" rows="4"
-                            title="Describe your business or organization"></textarea>
-                    </label>
-                </p>
+            <section>
+                <h2>Membership Levels</h2>
+                <div class="membership-cards">
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <a href="#np-details" aria-haspopup="dialog">View NP benefits</a>
+                    </article>
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <a href="#bronze-details" aria-haspopup="dialog">View Bronze benefits</a>
+                    </article>
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <a href="#silver-details" aria-haspopup="dialog">View Silver benefits</a>
+                    </article>
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <a href="#gold-details" aria-haspopup="dialog">View Gold benefits</a>
+                    </article>
+                </div>
+            </section>
+        </div>
 
-                <input type="hidden" id="timestamp" name="timestamp">
-                <input type="submit" value="Submit Application">
-            </form>
-        </section>
-        <section>
-            <h2>Membership Levels</h2>
-            <div class="membership-cards">
-                <article class="membership-card">
-                    <h3>NP Membership</h3>
-                    <a href="#np-details" aria-haspopup="dialog">View NP benefits</a>
-                </article>
-                <article class="membership-card">
-                    <h3>Bronze Membership</h3>
-                    <a href="#bronze-details" aria-haspopup="dialog">View Bronze benefits</a>
-                </article>
-                <article class="membership-card">
-                    <h3>Silver Membership</h3>
-                    <a href="#silver-details" aria-haspopup="dialog">View Silver benefits</a>
-                </article>
-                <article class="membership-card">
-                    <h3>Gold Membership</h3>
-                    <a href="#gold-details" aria-haspopup="dialog">View Gold benefits</a>
-                </article>
-            </div>
-        </section>
         <dialog id="np-details" aria-labelledby="np-title">
             <h2 id="np-title">NP Membership</h2>
             <p>No fee. Available to nonprofit organizations.</p>

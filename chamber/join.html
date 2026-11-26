@@ -38,11 +38,27 @@
 
         <section>
             <h2>Membership Levels</h2>
-            <ul>
-                <li>Nonprofit</li>
-                <li>Silver</li>
-                <li>Gold</li>
-            </ul>
+            <div class="membership-cards">
+                <article class="membership-card">
+                    <h3>NP Membership</h3>
+                    <a href="#np-details" aria-haspopup="dialog">View NP benefits</a>
+                </article>
+
+                <article class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <a href="#bronze-details" aria-haspopup="dialog">View Bronze benefits</a>
+                </article>
+
+                <article class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <a href="#silver-details" aria-haspopup="dialog">View Silver benefits</a>
+                </article>
+
+                <article class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <a href="#gold-details" aria-haspopup="dialog">View Gold benefits</a>
+                </article>
+            </div>
         </section>
 
         <section>
@@ -116,6 +132,47 @@
                 <input type="submit" value="Submit Application">
             </form>
         </section>
+        <dialog id="np-details" aria-labelledby="np-title">
+            <h2 id="np-title">NP Membership</h2>
+            <p>No fee. Available to nonprofit organizations.</p>
+            <ul>
+                <li>Chamber directory listing</li>
+                <li>Invitations to community networking events</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+
+        <dialog id="bronze-details" aria-labelledby="bronze-title">
+            <h2 id="bronze-title">Bronze Membership</h2>
+            <p>₱2,000 per year</p>
+            <ul>
+                <li>Directory listing and networking invitations</li>
+                <li>Discounted admission to chamber workshops</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+
+        <dialog id="silver-details" aria-labelledby="silver-title">
+            <h2 id="silver-title">Silver Membership</h2>
+            <p>₱5,000 per year</p>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Business promotion in the chamber newsletter</li>
+                <li>Eligibility for a homepage spotlight</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+
+        <dialog id="gold-details" aria-labelledby="gold-title">
+            <h2 id="gold-title">Gold Membership</h2>
+            <p>₱10,000 per year</p>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Priority homepage spotlight placement</li>
+                <li>Complimentary admission to selected chamber events</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
     </main>
 
     <footer>

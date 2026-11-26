@@ -2,10 +2,119 @@
     display: grid;
     gap: 2rem;
     align-items: start;
+    max-width: 70rem;
+    margin-inline: auto;
+}
+
+.join-layout label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 700;
+}
+
+.join-layout :is(input:not([type="hidden"]), select, textarea) {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #637487;
+    border-radius: 0.35rem;
+    font: inherit;
+}
+
+.join-layout label :is(input, select, textarea) {
+    width: 100%;
+    font-weight: 400;
+}
+
+.join-layout textarea {
+    resize: vertical;
+}
+
+.join-layout input[type="submit"],
+.close-dialog {
+    padding: 0.7rem 1rem;
+    border: 1px solid #16324f;
+    border-radius: 0.35rem;
+    background-color: #16324f;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1rem 1.25rem;
+    border-top: 3px solid #c8a86b;
+    border-radius: 0.35rem;
+    background-color: #eaf2f8;
+    animation: card-entrance 450ms ease-out both;
+}
+
+.membership-card h3 {
+    margin: 0 0 0.65rem;
+}
+
+.membership-card a {
+    color: #16324f;
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 80ms;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 160ms;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 240ms;
+}
+
+@keyframes card-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(0.75rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+dialog {
+    box-sizing: border-box;
+    width: min(90%, 30rem);
+    padding: 1.5rem;
+    border: 1px solid #16324f;
+    border-radius: 0.5rem;
+    color: #243447;
+    line-height: 1.5;
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+dialog::backdrop {
+    background-color: rgb(22 50 79 / 60%);
 }
 
 @media (min-width: 48rem) {
     .join-layout {
         grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
     }
 }

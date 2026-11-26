@@ -1,17 +1,21 @@
 const application = new URLSearchParams(window.location.search);
-const firstName = application.get("firstName");
-const lastName = application.get("lastName");
-const membership = application.get("membership");
 
-const membershipNames = new Map([
-    ["nonprofit", "Nonprofit"],
-    ["silver", "Silver"],
-    ["gold", "Gold"]
-]);
+if (application.get('firstName') && application.get('lastName')) {
+    const fields = {
+        'result-first-name': 'firstName',
+        'result-last-name': 'lastName',
+        'result-email': 'email',
+        'result-phone': 'phone',
+        'result-organization': 'organization',
+        'result-timestamp': 'timestamp'
+    };
 
-if (firstName && lastName && membershipNames.has(membership)) {
-    const summary = document.querySelector("#application-summary");
-    const level = membershipNames.get(membership);
+    for (const [id, parameter] of Object.entries(fields)) {
+        document.getElementById(id).textContent =
+            application.get(parameter) || 'Unavailable';
+    }
 
-    summary.textContent = `Thank you, ${firstName} ${lastName}. You selected ${level} membership for this demo.`;
+    document.getElementById('application-summary').textContent =
+        'Thank you for completing the Manila Chamber of Commerce membership application.';
+    document.getElementById('application-details').hidden = false;
 }

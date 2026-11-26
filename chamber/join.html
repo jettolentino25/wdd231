@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="icon" href="images/chamber-favicon.ico" sizes="32x32">
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -41,40 +42,70 @@
 
             <form action="thankyou.html" method="get">
                 <p>
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+                    <label for="first-name">
+                        First name
+                        <input type="text" id="first-name" name="firstName" autocomplete="given-name"
+                            title="Enter your first name" required>
+                    </label>
                 </p>
                 <p>
-                    <label for="last-name">Last name</label>
-                    <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+                    <label for="last-name">
+                        Last name
+                        <input type="text" id="last-name" name="lastName" autocomplete="family-name"
+                            title="Enter your last name" required>
+                    </label>
                 </p>
                 <p>
-                    <label for="organization">Business or organization name</label>
-                    <input type="text" id="organization" name="organization" autocomplete="organization" required>
+                    <label for="organization-title">
+                        Organizational title (optional)
+                        <input type="text" id="organization-title" name="organizationTitle"
+                            autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"
+                            title="Enter at least 7 characters using letters, spaces, or hyphens.">
+                    </label>
                 </p>
                 <p>
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <label for="organization">
+                        Business or organization name
+                        <input type="text" id="organization" name="organization" autocomplete="organization"
+                            title="Enter your business or organization name" required>
+                    </label>
                 </p>
                 <p>
-                    <label for="phone">Mobile phone</label>
-                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                    <label for="email">
+                        Email address
+                        <input type="email" id="email" name="email" autocomplete="email"
+                            title="Enter your email address" placeholder="name@example.com" required>
+                    </label>
                 </p>
                 <p>
-                    <label for="membership">Membership level</label>
-                    <select id="membership" name="membership" required>
-                        <option value="">Choose a level</option>
-                        <option value="nonprofit">Nonprofit</option>
-                        <option value="silver">Silver</option>
-                        <option value="gold">Gold</option>
-                    </select>
+                    <label for="phone">
+                        Mobile phone
+                        <input type="tel" id="phone" name="phone" autocomplete="tel"
+                            title="Enter your mobile phone number" required>
+                    </label>
                 </p>
                 <p>
-                    <label for="description">Tell us about your organization</label>
-                    <textarea id="description" name="description" rows="4"></textarea>
+                    <label for="membership">
+                        Membership level
+                        <select id="membership" name="membership" title="Choose a membership level" required>
+                            <option value="">Choose a level</option>
+                            <option value="np">NP Membership (no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label for="description">
+                        Tell us about your organization
+                        <textarea id="description" name="description" rows="4"
+                            title="Describe your business or organization"></textarea>
+                    </label>
                 </p>
 
-                <button type="submit">Submit Application</button>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Submit Application">
             </form>
         </section>
     </main>
